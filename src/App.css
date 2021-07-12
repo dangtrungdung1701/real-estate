@@ -3,8 +3,9 @@
   height: 100vh;
 
   background-color: var(--primary-background-color);
-  overflow-y: auto;
+  overflow-y: scroll;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .real-estate::-webkit-scrollbar {
@@ -22,7 +23,7 @@
   justify-content: center;
   flex-direction: column;
 
-  padding: 40px 0px 40px 40px;
+  padding: 60px 0px 40px 40px;
 
   width: 100%;
 }

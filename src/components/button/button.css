@@ -6,14 +6,14 @@
   padding: 5px 7px;
   background-color: transparent;
 
-  transition: all 0.3s ease;
-
   display: flex;
   justify-content: center;
   align-items: center;
 
   position: relative;
   z-index: 10;
+
+  transition: all 0.3s ease;
 }
 
 .btn button::before {
@@ -35,31 +35,29 @@
   transition: all 0.3s ease;
 }
 
-.btn button:hover::before {
-  width: 100%;
-}
-
 .btn button span {
   color: var(--third-color);
   z-index: 10;
   margin-right: 10px;
+
+  font-weight: 550;
 }
 
 .btn button .btn-icon {
   fill: var(--third-color);
 
   z-index: 10;
-
-  /* transform: translateX(150%); */
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
 }
-
+/* hover animation */
 .btn button:hover .btn-icon {
-  transform: translateX(0);
   fill: var(--secondary-color);
 }
 
 .btn button:hover span {
   color: var(--secondary-color);
 }
+
+.btn button:hover::before {
+  width: 100%;
+}
+/* end hover aniamation */

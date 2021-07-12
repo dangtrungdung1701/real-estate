@@ -1,5 +1,5 @@
 .navbar {
-  width: 100%;
+  width: calc(100% - 5px);
   height: 50px;
 
   display: flex;
@@ -10,9 +10,8 @@
 
   background-color: rgba(212, 217, 245, 0.8);
 
-  position: sticky;
-  top: 0;
-  left: 0;
+  position: fixed;
+  z-index: 99;
 }
 
 .navbar__logo {
@@ -30,7 +29,7 @@
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .navbar__menu > a {
@@ -38,13 +37,18 @@
 
   transition: all 0.3s ease;
   position: relative;
+
+  font-weight: 550;
+  font-size: clamp(0.8rem, 1vw, 1.5rem);
+
+  margin-left: 35px;
 }
 
 .navbar__menu > a:not(:last-child)::after {
   content: "";
 
   width: 0%;
-  height: 4px;
+  height: 3px;
   background-color: var(--primary-color);
 
   margin: 0 auto;
@@ -73,6 +77,10 @@
 @media (max-width: 768px) {
   .navbar {
     height: 40px;
+  }
+
+  .navbar .navbar__menu a {
+    margin-left: 25px;
   }
 }
 
