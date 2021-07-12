@@ -1,16 +1,65 @@
+.btn {
+  --height: 30px;
+}
+
 .btn button {
-  padding: 7px;
-  border-radius: var(--boder-radius-btn);
-  background-color: var(--primary-btn-color);
-  color: var(--primary-color);
+  padding: 5px 7px;
+  background-color: transparent;
 
   transition: all 0.3s ease;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   position: relative;
+  z-index: 10;
 }
 
-.btn button:hover {
-  background-color: var(--secondary-btn-hover-color);
+.btn button::before {
+  content: "";
 
-  color: black;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: 9;
+
+  height: var(--height);
+  width: var(--height);
+
+  border-radius: calc(var(--height) / 2);
+
+  background-color: var(--primary-btn-color);
+
+  transition: all 0.3s ease;
+}
+
+.btn button:hover::before {
+  width: 100%;
+}
+
+.btn button span {
+  color: var(--third-color);
+  z-index: 10;
+  margin-right: 10px;
+}
+
+.btn button .btn-icon {
+  fill: var(--third-color);
+
+  z-index: 10;
+
+  /* transform: translateX(150%); */
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn button:hover .btn-icon {
+  transform: translateX(0);
+  fill: var(--secondary-color);
+}
+
+.btn button:hover span {
+  color: var(--secondary-color);
 }

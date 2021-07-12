@@ -9,15 +9,17 @@ import Contact from "./pages/contact/Contact";
 
 function App() {
   return (
-    <div className="App">
+    <div className="real-estate">
       <NavBar />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/rentals" component={Rentals} />
-        <Route exact path="/contact" component={Contact} />
-        <Route component={Error} />
-      </Switch>
+      <div className="body">
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/rentals" component={Rentals} />
+          <Route exact path="/contact" component={Contact} />
+          <Route component={Error} />
+        </Switch>
+      </div>
     </div>
   );
 }

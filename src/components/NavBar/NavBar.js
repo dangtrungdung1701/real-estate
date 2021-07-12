@@ -23,9 +23,7 @@ function NavBar() {
         </Link>
       </div>
       <div className="navbar__menu">
-        <Link className="active" to="/">
-          Home
-        </Link>
+        <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/rentals">Rentals</Link>
         <Link to="/contact">

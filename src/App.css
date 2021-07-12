@@ -1,0 +1,28 @@
+.real-estate {
+  width: 100%;
+  height: 100vh;
+
+  background-color: var(--primary-background-color);
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.real-estate::-webkit-scrollbar {
+  width: 5px;
+  background-color: var(--primary-background-color);
+}
+
+.real-estate::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 2.5px;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 40px 0px 40px 40px;
+
+  width: 100%;
+}
