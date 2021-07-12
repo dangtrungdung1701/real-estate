@@ -1,0 +1,16 @@
+.btn button {
+  padding: 7px;
+  border-radius: var(--boder-radius-btn);
+  background-color: var(--primary-btn-color);
+  color: var(--primary-color);
+
+  transition: all 0.3s ease;
+
+  position: relative;
+}
+
+.btn button:hover {
+  background-color: var(--secondary-btn-hover-color);
+
+  color: black;
+}
