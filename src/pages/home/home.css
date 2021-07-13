@@ -23,7 +23,7 @@
   margin-bottom: 20px;
 
   font-weight: 400;
-  font-size: 1.1vw;
+  font-size: 1vw;
 }
 
 .typical-products .img {
@@ -34,6 +34,75 @@
 
 .typical-products .img img {
   border-radius: 10px 0 0 10px;
+}
+/* end typical-products */
+
+/* achievement */
+
+.achievement {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.achievement .img {
+  flex: 1.2;
+  height: 500px;
+
+  margin-right: 70px;
+}
+
+.achievement .img img {
+  border-radius: 0 10px 10px 0;
+}
+
+.achievement .content {
+  flex: 2;
+
+  padding-right: 10vw;
+}
+
+.achievement .content h1 {
+  margin-bottom: 20px;
+
+  font-size: 3vw;
+}
+
+.achievement .content p {
+  margin-bottom: 20px;
+
+  font-weight: 300;
+  font-size: 1vw;
+}
+
+.achievement .content .items {
+  display: flex;
+  align-items: center;
+}
+
+.achievement .content .items .item {
+  margin-right: 8vw;
+
+  width: 5vw;
+}
+
+.achievement .content .items .item .big-num {
+  font-weight: bold;
+  font-size: 1.8vw;
+
+  margin-bottom: 5px;
+}
+
+.achievement .content .items .item p {
+  font-size: 1.1vw;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 780px) {
+  .typical-products .img,
+  .achievement .img {
+    height: 300px;
+  }
 }
 
 @media only screen and (max-width: 650px) {
@@ -50,6 +119,38 @@
   }
 
   .typical-products .content p {
-    font-size: 2.5vw;
+    font-size: 2.2vw;
+  }
+
+  .achievement {
+    flex-direction: column-reverse;
+  }
+
+  .achievement .img {
+    flex: none;
+  }
+
+  .achievement .img img {
+    border-radius: 10px;
+  }
+
+  .achievement .content {
+    margin-bottom: 20px;
+  }
+
+  .achievement .content h1 {
+    font-size: 6vw;
+  }
+
+  .achievement .content p {
+    font-size: 2.2vw;
+  }
+
+  .achievement .content .items .item .big-num {
+    font-size: 4vw;
+  }
+
+  .achievement .content .items .item p {
+    font-size: 2.3vw;
   }
 }

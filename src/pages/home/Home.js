@@ -21,6 +21,38 @@ function Home() {
           />
         </div>
       </div>
+      <div className="achievement">
+        <div className="img">
+          <img
+            src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=354&q=80"
+            alt="achievement"
+          />
+        </div>
+        <div className="content">
+          <h1>We Are The Leader in The Architectural</h1>
+          <p>
+            For each project we establish relationships wiht partners who we
+            know will help us create added value for your project. As well as
+            bringing together the public and private sectors, we make
+            sector-overarching links to gather knowledge and to learn from each
+            other
+          </p>
+          <div className="items">
+            <div className="item">
+              <p className="big-num">850</p>
+              <p>Property Build</p>
+            </div>
+            <div className="item">
+              <p className="big-num">24</p>
+              <p>Awards Gainded</p>
+            </div>
+            <div className="item">
+              <p className="big-num">15</p>
+              <p>Years Experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

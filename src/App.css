@@ -3,7 +3,7 @@
   height: 100vh;
 
   background-color: var(--primary-background-color);
-  overflow-y: scroll;
+  overflow-y: auto;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
